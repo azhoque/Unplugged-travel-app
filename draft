@@ -1,0 +1,13 @@
+$(function() {
+    $("#js-form").submit(event => {
+      event.preventDefault();
+      const queryTarget = $(event.currentTarget).find('#js-input');
+      const query = queryTarget.val();
+      $("#js-input").val("");
+     getDataFromApi(query, displaySearchData);
+    });
+   
+    //getDataFromApi("New York", function(data) {
+      //console.log(data);
+    //});
+  });
