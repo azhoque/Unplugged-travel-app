@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Unplugged</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="main.css"/>
+  <meta charset="utf-8">
+  <title>Unplugged</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link type="text/css" rel="stylesheet" href="main.css" />
 </head>
 
 <body>
 
-<nav class="navigation">
+  <nav class="navigation">
     <div class="nav-wrapper blue-grey darken-2">
       <a href="#!" class="brand-logo center">unplugged</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -28,36 +28,33 @@
     </div>
   </nav>
 
-        <div class="parallax-container valign-wrapper">
-        <div class="container">
-          <div class="parallax"><img src="madrid.jpg"></div>
-          <div class="row">
-            <div class="col l8 s12">
-            <form id="js-form">
-                <label for="text" id="js-label">Enter your destination</label>
-                <input placeholder="London, UK" type="text" class="validate" type="text" id="js-input">
-                <button class="btn btn-large red darken-3 waves-effect waves-light" type="submit" name="action">GO</button>
-            </form>
-            </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="container">
+      <div class="parallax"><img src="madrid.jpg"></div>
+      <div class="row">
+        <div class="col l8 s12">
+          <form id="js-form">
+            <label for="text" id="js-label">Enter your destination</label>
+            <input placeholder="London, UK" type="text" class="validate" type="text" id="js-input">
+            <button class="btn btn-large red darken-3 waves-effect waves-light" type="submit" name="action">GO</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h4 class="center light flow-text">“For once you have tasted flight you will walk the earth with your eyes turned skywards, for there you have been and there you will long to return.” – Leonardo da Vinci.</h4>
+            <div id="js-results" class="row"></div>
           </div>
-            </div>
-            </div>
+        </div>
+      </div>
+  </div>
 
-            <div class="container">
-              <div class="section">
-                <div class="row">
-                  <div class="col s12 center">
-
-                    <p class="center light">“For my part, I travel not to go anywhere, but to go. I travel for travel’s sake. The great affair is to move.” – Robert Louis Stevenson.</p>
-                    <div class="container">
-                      <div id="js-results" class="row"></div>
-              </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-<section id="js-weather">
+  <section id="js-weather">
     <div class="fixed-action-btn" style="bottom:45px;right:24px">
       <a id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating btn-large cyan">
         <i class="material-icons">cloudflare</i>
@@ -65,53 +62,47 @@
     </div>
     <!-- TAP TARGET CONTENT -->
     <div class="tap-target blue-grey darken-1" data-activates="menu">
-        <div class="tap-target-content white-text">
+      <div class="tap-target-content white-text">
+      </div>
+    </div>
+  </section>
+  <div class="parallax-container">
+    <div class="row center">
+      <div id="map" class="row"></div>
+    </div>
+  </div>
+  <footer class="page-footer  blue-grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul class="social">
+            <li><a href="https://www.facebook.com/theaceshigh" target=_blank><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/azizul-hoque-39b0b847/" target=_blank><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/azhoque" target=_blank><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Book your vacation here!</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="https://www.priceline.com/" target="_blank">Priceline</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.booking.com/" target=_blank>Booking.com</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.hotwire.com/" target=_blank>Hotwire</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.kayak.com/" target=_blank>Kayak</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.expedia.com/" target=_blank>Expedia</a></li>
+          </ul>
         </div>
       </div>
-  </section>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <p class="center">© 2017 Copyright www.unplugged.com</p>
+      </div>
+    </div>
+  </footer>
 
-
-
-  <div class="parallax-container">
-      <div class="row center">
-          <div id="map" class="row"></div>
-</div>
-</div>
-  <footer class="page-footer  blue-grey darken-3">
-              <div class="container">
-                <div class="row">
-                  <div class="col l6 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul class="social">
-                      <li><a href="https://www.facebook.com/theaceshigh" target=_blank><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="https://www.linkedin.com/in/azizul-hoque-39b0b847/" target=_blank><i class="fa fa-linkedin" aria-hidden="true"></i>
-</a></li>
-                      <li><a href="https://github.com/azhoque" target=_blank><i class="fa fa-github" aria-hidden="true"></i>
-</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Book your vacation here!</h5>
-                    <ul>
-                      <li><a class="grey-text text-lighten-3" href="https://www.priceline.com/" target="_blank">Priceline</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://www.booking.com/" target=_blank>Booking.com</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://www.hotwire.com/" target=_blank>Hotwire</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://www.kayak.com/" target=_blank>Kayak</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://www.expedia.com/" target=_blank>Expedia</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-copyright">
-                <div class="container">
-              <p class="center">© 2017 Copyright www.unplugged.com</p>
-                </div>
-              </div>
-            </footer>
-
-    <script src="app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   <!--  <script>
     function initMap(data){
 
@@ -124,10 +115,53 @@
         position:{lat:30.2672, lng:-97.7431},
         map:map,
       });
-      }-->
-      </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWIyUQOV2Ud4rxM4H-hEC6kph2XjxhV_A&callback=initMap"
-    async defer></script>
+      }
+  </script>-->
+  <script>
+  var map;
+   var infowindow;
+
+   function initMap() {
+     var austin = {lat: 30.2672, lng: -97.7431};
+
+     map = new google.maps.Map(document.getElementById('map'), {
+       center: austin,
+       zoom: 15
+     });
+
+     infowindow = new google.maps.InfoWindow();
+     var service = new google.maps.places.PlacesService(map);
+     service.nearbySearch({
+       location: austin,
+       radius: 500,
+       type: ['store']
+     }, callback);
+   }
+
+   function callback(results, status) {
+     if (status === google.maps.places.PlacesServiceStatus.OK) {
+       for (var i = 0; i < results.length; i++) {
+         createMarker(results[i]);
+       }
+     }
+   }
+
+   function createMarker(place) {
+     var placeLoc = place.geometry.location;
+     var marker = new google.maps.Marker({
+       map: map,
+       position: place.geometry.location
+     });
+
+     google.maps.event.addListener(marker, 'click', function() {
+       infowindow.setContent(place.name);
+       infowindow.open(map, this);
+     });
+   }
+
+
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWIyUQOV2Ud4rxM4H-hEC6kph2XjxhV_A&location&callback=initMap&libraries=places" async defer></script>
 </body>
 
 </html>
