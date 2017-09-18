@@ -48,7 +48,7 @@ function getOutput(out) {
          <img class="activator" src=${thumb}>
        </div>
        <div class="card-content">
-         <span class="card-title activator grey-darken-4"><h6>${city}, ${country}</h6><i class="material-icons right"></i></span>
+         <span class="card-title activator grey-darken-4"><h6>${city}, ${country}</h6><i class="material-icons right">more_vert</i></span>
        </div>
        <div class="card-reveal">
          <span class="card-title grey-text text-darken-4 flow-text">${city}, ${country}<i class="material-icons right">close</i></span>
