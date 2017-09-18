@@ -34,27 +34,6 @@ function getWeatherApi(searchTerm, callback) {
   $.ajax(api2Call);
 }
 
-function initMap(data) {
-
-  var options = {
-    zoom: 8,
-    center: {
-      lat: 30.2672,
-      lng: -97.7431
-    }
-  }
-  var map = new google.maps.Map(document.getElementById('map'), options);
-  var marker = new google.maps.Marker({
-    position: {
-      lat: 30.2672,
-      lng: -97.7431
-    },
-    map: map,
-  });
-
-}
-
-
 function getOutput(out) {
   var city = out.name;
   var country = out.name_suffix;
@@ -118,5 +97,6 @@ $(function() {
       console.log(data);
       displayWeatherData(data);
     });
+
   });
 });
