@@ -1,7 +1,7 @@
 #Unplugged
 
 This resposive webapp uses api hacks from popular sites to display user search results. 
-1. I used APIhacks to get data for my project
+1. APIhacks Ajax call
 2. Javascript and Jquery 
 3. HTML semantic
 4. Materialized CSS
