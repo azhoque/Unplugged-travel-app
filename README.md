@@ -1,6 +1,10 @@
 #Unplugged
 
 This resposive webapp uses api hacks from popular sites to display user search results. 
+1. I used APIhacks to get data for my project
+2. Javascript and Jquery 
+3. HTML semantic
+4. Materialized CSS
 
 API used to search popular destination data with images and descriptions - "https://travel.sygic.com/#/?wizard&type=poi&end=2017-09-15&start=2017-09-15"
 	1. Search city name and country name to display popular detinations to visit. 
