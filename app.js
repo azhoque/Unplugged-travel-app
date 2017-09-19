@@ -42,7 +42,7 @@ function getOutput(out) {
   var url = "https://travel.sygic.com/#/?wizard&type=poi&end=2017-09-15&start=2017-09-15";
   // var temp = out.weather.main;
   var output =
-    `<div class="col s3">
+    `<div class="col l3 s12">
           <div class="card small">
        <div class="card-image waves-effect waves-block waves-light">
          <img class="activator" src=${thumb}>

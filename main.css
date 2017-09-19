@@ -91,3 +91,14 @@ body{
   #pac-input::placeholder {
   color: #263238 !important;
   font-weight: 300 !important;
+}
+#quote-container{
+  margin-bottom: 0 !important;
+
+}
+#js-weather{
+  margin:0 !important;
+}
+#js-result{
+  margin-bottom: 0 !important;
+}
