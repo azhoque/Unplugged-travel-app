@@ -20,7 +20,7 @@ function getDataFromApi(searchTerm, callback) {
 }
 
 function getWeatherApi(searchTerm, callback) {
-  const weatherApi = 'http://api.openweathermap.org/data/2.5/weather?q=' + searchTerm + "&units=Imperial" + "&APPID=7b87148d8f8b76f5a6623a78f3de3152";
+  const weatherApi = 'https://api.openweathermap.org/data/2.5/weather?q=' + searchTerm + "&units=Imperial" + "&APPID=7b87148d8f8b76f5a6623a78f3de3152";
   const api2Call = {
     url: weatherApi,
     data: {
