@@ -15,20 +15,14 @@
 </head>
 
 <body>
-
+<section>
   <nav class="navigation">
     <div class="nav-wrapper blue-grey darken-2">
       <a href="#!" class="brand-logo center">unplugged</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#"></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">About</a></li>
-      </ul>
-    </div>
+      </div>
   </nav>
-
+</section>
+<section>
   <div class="parallax-container valign-wrapper">
     <div class="container">
       <div class="parallax"><img src="madrid.jpg"></div>
@@ -43,13 +37,15 @@
       </div>
     </div>
   </div>
-
+</section>
   <div class="container">
-
       <div class="row">
         <div class="col s12 center">
           <h2>About Us</h2>
-          <p class="center light flow-text">Unplugged is a travel site search app that displays popular destinations based on user search. This web app is using APIhacks from popular travel site to get the data with images. Addicationally, user can use the google map auto-complete to search any landmarks, places and retaurants to see the result on map.</p>
+          <p class="center light flow-text">Unplugged is webapp that uses API-hacks to display popular travel destinations based on user search. 
+                                            This webapp displays images with descriptions for top eight places along with marker on google map. User can also view
+                                            current weather information based on the search result displayed on the lower right corner of the screen.  
+          </p>
             <div id="js-results" class="row"></div>
           </div>
         </div>
@@ -76,8 +72,7 @@
   <div class="parallax-container">
     <div class="row center">
       <div class="col s12">
-      <input id="pac-input" class="controls" type="text" placeholder="Search on map">
-    <div id="map"></div>
+      
       <div id="map" class="row"></div>
     </div>
       </div>
@@ -125,9 +120,9 @@
          });
 
          // Create the search box and link it to the UI element.
-         var input = document.getElementById('pac-input');
+         var input = document.getElementById('js-input');
          var searchBox = new google.maps.places.SearchBox(input);
-         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
          // Bias the SearchBox results towards current map's viewport.
          map.addListener('bounds_changed', function() {

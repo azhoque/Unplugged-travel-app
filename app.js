@@ -63,7 +63,6 @@ function getOutput(out) {
 }
 
 function getWeather(item, value) {
-
   var outputWeather = `<div>${item}: ${value}</div>`;
   return outputWeather;
 }
